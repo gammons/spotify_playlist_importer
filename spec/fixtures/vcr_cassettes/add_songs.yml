@@ -1,0 +1,195 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.spotify.com/v1/users/gammons/playlists
+    body:
+      encoding: UTF-8
+      string: '{"name":"test playlist","public":true}'
+    headers:
+      Authorization:
+      - Bearer BQBTe67iKg1XBGWLYgwItEoMd3kxE0HTzV69BgChun0ktZ8Tgb7JdTc7NZXulzsGqT6Uh7Dh6eHm4r7u7pS_W2jLIPNtE4wTXrMPSIdjdASLRRDzGsZDcSSEo2-Tjb7hFxjQD0JPACxpon3pTxAxTLXAm7lzTesJF_pTt7aw6pfZWvOXPTKg34xVRbVl82jGfhLYOKR6eXjLVnvTNHwWe0P0WjaIahMVtQg
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 26 Dec 2014 19:03:36 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1061'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=600
+      Cache-Control:
+      - private, max-age=0
+      Location:
+      - https://api.spotify.com/v1/users/gammons/playlists/1s7IF0wBg1fkIBMb7s6oIi
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Origin, Content-Type
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '604800'
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE
+      Access-Control-Allow-Credentials:
+      - 'true'
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=31536000;
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "collaborative" : false,
+          "description" : null,
+          "external_urls" : {
+            "spotify" : "http://open.spotify.com/user/gammons/playlist/1s7IF0wBg1fkIBMb7s6oIi"
+          },
+          "followers" : {
+            "href" : null,
+            "total" : 0
+          },
+          "href" : "https://api.spotify.com/v1/users/gammons/playlists/1s7IF0wBg1fkIBMb7s6oIi",
+          "id" : "1s7IF0wBg1fkIBMb7s6oIi",
+          "images" : [ ],
+          "name" : "test playlist",
+          "owner" : {
+            "external_urls" : {
+              "spotify" : "http://open.spotify.com/user/gammons"
+            },
+            "href" : "https://api.spotify.com/v1/users/gammons",
+            "id" : "gammons",
+            "type" : "user",
+            "uri" : "spotify:user:gammons"
+          },
+          "public" : true,
+          "snapshot_id" : "HbEWiDut7AHDwUgJa0V6UmKXHu6bsJgUuzTPYZcBWXI35znv7cmy1X5u6D4w9hle",
+          "tracks" : {
+            "href" : "https://api.spotify.com/v1/users/gammons/playlists/1s7IF0wBg1fkIBMb7s6oIi/tracks",
+            "items" : [ ],
+            "limit" : 100,
+            "next" : null,
+            "offset" : 0,
+            "previous" : null,
+            "total" : 0
+          },
+          "type" : "playlist",
+          "uri" : "spotify:user:gammons:playlist:1s7IF0wBg1fkIBMb7s6oIi"
+        }
+    http_version: 
+  recorded_at: Fri, 26 Dec 2014 19:03:36 GMT
+- request:
+    method: post
+    uri: https://api.spotify.com/v1/users/gammons/playlists/1s7IF0wBg1fkIBMb7s6oIi/tracks
+    body:
+      encoding: UTF-8
+      string: '{"uris":["spotify:track:3c7xCi2LPquTiopDJAVYNu","spotify:track:3apM29XpfQWRg0MXBbN9Cc","spotify:track:2DuRzBqwkz6uzXJVrBkN5g","spotify:track:0MCJUzJ78RwFma2HGX0qYI","spotify:track:2UHwgRtMSJtD4mH3Tob3Az","spotify:track:6X36gTnPSqRvfnPCk3yBsg","spotify:track:0ya4rPCpn0eCh9hGTELVJw","spotify:track:1S8FBwS475qrBhJhWtqeiP","spotify:track:2hNFIQQZCLim87yHjTkBwB","spotify:track:4hAuBKwUBCqJRcuWArpTjV","spotify:track:5Xc0N7o6JNUhrHi7ultPZS","spotify:track:4wNrVHzfxMpH3UJJjLmEQi","spotify:track:0Vg5CqzHEMbnRdtpwN4b65","spotify:track:4USmJQqtSJHKiqqkdCaeZr","spotify:track:44YQwIJ1tz4CeiyiGDvmAc","spotify:track:3wYH2PUpODMvSHs5enNbsZ","spotify:track:1pezmGsfm6AOd3PLvyn4rJ"]}'
+    headers:
+      Authorization:
+      - Bearer BQBTe67iKg1XBGWLYgwItEoMd3kxE0HTzV69BgChun0ktZ8Tgb7JdTc7NZXulzsGqT6Uh7Dh6eHm4r7u7pS_W2jLIPNtE4wTXrMPSIdjdASLRRDzGsZDcSSEo2-Tjb7hFxjQD0JPACxpon3pTxAxTLXAm7lzTesJF_pTt7aw6pfZWvOXPTKg34xVRbVl82jGfhLYOKR6eXjLVnvTNHwWe0P0WjaIahMVtQg
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 26 Dec 2014 19:03:36 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '88'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=600
+      Cache-Control:
+      - private, max-age=0
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Origin, Content-Type
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '604800'
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE
+      Access-Control-Allow-Credentials:
+      - 'true'
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=31536000;
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "snapshot_id" : "PM+hl1IEQfhqthXvb4o0gef3kg6onPy8RZka5m8zdaLFn687KkzYLSjp7+9jJlvU"
+        }
+    http_version: 
+  recorded_at: Fri, 26 Dec 2014 19:03:36 GMT
+- request:
+    method: post
+    uri: https://api.spotify.com/v1/users/gammons/playlists/1s7IF0wBg1fkIBMb7s6oIi/tracks
+    body:
+      encoding: UTF-8
+      string: '{"uris":["spotify:track:3c7xCi2LPquTiopDJAVYNu","spotify:track:3apM29XpfQWRg0MXBbN9Cc","spotify:track:2DuRzBqwkz6uzXJVrBkN5g","spotify:track:0MCJUzJ78RwFma2HGX0qYI","spotify:track:2UHwgRtMSJtD4mH3Tob3Az","spotify:track:6X36gTnPSqRvfnPCk3yBsg","spotify:track:0ya4rPCpn0eCh9hGTELVJw","spotify:track:1S8FBwS475qrBhJhWtqeiP","spotify:track:2hNFIQQZCLim87yHjTkBwB","spotify:track:4hAuBKwUBCqJRcuWArpTjV","spotify:track:5Xc0N7o6JNUhrHi7ultPZS","spotify:track:4wNrVHzfxMpH3UJJjLmEQi","spotify:track:0Vg5CqzHEMbnRdtpwN4b65","spotify:track:4USmJQqtSJHKiqqkdCaeZr","spotify:track:44YQwIJ1tz4CeiyiGDvmAc","spotify:track:3wYH2PUpODMvSHs5enNbsZ","spotify:track:1pezmGsfm6AOd3PLvyn4rJ"]}'
+    headers:
+      Authorization:
+      - Bearer BQBTe67iKg1XBGWLYgwItEoMd3kxE0HTzV69BgChun0ktZ8Tgb7JdTc7NZXulzsGqT6Uh7Dh6eHm4r7u7pS_W2jLIPNtE4wTXrMPSIdjdASLRRDzGsZDcSSEo2-Tjb7hFxjQD0JPACxpon3pTxAxTLXAm7lzTesJF_pTt7aw6pfZWvOXPTKg34xVRbVl82jGfhLYOKR6eXjLVnvTNHwWe0P0WjaIahMVtQg
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 26 Dec 2014 19:04:04 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '88'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=600
+      Cache-Control:
+      - private, max-age=0
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Origin, Content-Type
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '604800'
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE
+      Access-Control-Allow-Credentials:
+      - 'true'
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=31536000;
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "snapshot_id" : "Up3OzKZ4DCKcn0HTbmeHZdZwO1qL6uVgBssy02RXDiicti87F80LySjp7+9jJlvU"
+        }
+    http_version: 
+  recorded_at: Fri, 26 Dec 2014 19:04:04 GMT
+recorded_with: VCR 2.9.3

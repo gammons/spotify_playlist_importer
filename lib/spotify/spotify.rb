@@ -1,0 +1,3 @@
+module Spotify
+
+end

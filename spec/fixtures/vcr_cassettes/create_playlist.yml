@@ -1,0 +1,91 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.spotify.com/v1/users/gammons/playlists
+    body:
+      encoding: UTF-8
+      string: '{"name":"test playlist","public":false}'
+    headers:
+      Authorization:
+      - Bearer BQBTe67iKg1XBGWLYgwItEoMd3kxE0HTzV69BgChun0ktZ8Tgb7JdTc7NZXulzsGqT6Uh7Dh6eHm4r7u7pS_W2jLIPNtE4wTXrMPSIdjdASLRRDzGsZDcSSEo2-Tjb7hFxjQD0JPACxpon3pTxAxTLXAm7lzTesJF_pTt7aw6pfZWvOXPTKg34xVRbVl82jGfhLYOKR6eXjLVnvTNHwWe0P0WjaIahMVtQg
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 26 Dec 2014 18:42:12 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1062'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=600
+      Cache-Control:
+      - private, max-age=0
+      Location:
+      - https://api.spotify.com/v1/users/gammons/playlists/1FhZYS2O98NDpOtvgZTxF2
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Origin, Content-Type
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '604800'
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE
+      Access-Control-Allow-Credentials:
+      - 'true'
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=31536000;
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "collaborative" : false,
+          "description" : null,
+          "external_urls" : {
+            "spotify" : "http://open.spotify.com/user/gammons/playlist/1FhZYS2O98NDpOtvgZTxF2"
+          },
+          "followers" : {
+            "href" : null,
+            "total" : 0
+          },
+          "href" : "https://api.spotify.com/v1/users/gammons/playlists/1FhZYS2O98NDpOtvgZTxF2",
+          "id" : "1FhZYS2O98NDpOtvgZTxF2",
+          "images" : [ ],
+          "name" : "test playlist",
+          "owner" : {
+            "external_urls" : {
+              "spotify" : "http://open.spotify.com/user/gammons"
+            },
+            "href" : "https://api.spotify.com/v1/users/gammons",
+            "id" : "gammons",
+            "type" : "user",
+            "uri" : "spotify:user:gammons"
+          },
+          "public" : false,
+          "snapshot_id" : "n0ZDXJymvvTufDZYud3QnN5x21q9KhBMUo/eALL9J46NkGuN4BcNhaXtuPgpnme3",
+          "tracks" : {
+            "href" : "https://api.spotify.com/v1/users/gammons/playlists/1FhZYS2O98NDpOtvgZTxF2/tracks",
+            "items" : [ ],
+            "limit" : 100,
+            "next" : null,
+            "offset" : 0,
+            "previous" : null,
+            "total" : 0
+          },
+          "type" : "playlist",
+          "uri" : "spotify:user:gammons:playlist:1FhZYS2O98NDpOtvgZTxF2"
+        }
+    http_version: 
+  recorded_at: Fri, 26 Dec 2014 18:42:12 GMT
+recorded_with: VCR 2.9.3

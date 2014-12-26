@@ -1,0 +1,822 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.spotify.com/v1/search?q=Teengirl%20Fantasy&type=artist
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 26 Dec 2014 16:55:15 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=600
+      Cache-Control:
+      - public, max-age=7200
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Origin, Content-Type
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '604800'
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE
+      Access-Control-Allow-Credentials:
+      - 'true'
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=31536000;
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "artists" : {
+            "href" : "https://api.spotify.com/v1/search?query=Teengirl+Fantasy&offset=0&limit=20&type=artist",
+            "items" : [ {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/6Y7sP6UmEue4Ym3m5HqK8X"
+              },
+              "genres" : [ ],
+              "href" : "https://api.spotify.com/v1/artists/6Y7sP6UmEue4Ym3m5HqK8X",
+              "id" : "6Y7sP6UmEue4Ym3m5HqK8X",
+              "images" : [ {
+                "height" : 667,
+                "url" : "https://i.scdn.co/image/2da84125e13a70b829c70dc8805435b77fa0e424",
+                "width" : 1000
+              }, {
+                "height" : 427,
+                "url" : "https://i.scdn.co/image/d0e6486eda444f3f8ab98b616f1f03ca456fc460",
+                "width" : 640
+              }, {
+                "height" : 133,
+                "url" : "https://i.scdn.co/image/c53af1861717184bc7ae5c34046c1ff9771c6546",
+                "width" : 200
+              }, {
+                "height" : 43,
+                "url" : "https://i.scdn.co/image/ee78289c911c5831dcc5599c04c88019e795bf45",
+                "width" : 64
+              } ],
+              "name" : "Teengirl Fantasy",
+              "popularity" : 18,
+              "type" : "artist",
+              "uri" : "spotify:artist:6Y7sP6UmEue4Ym3m5HqK8X"
+            }, {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/2QqaC0TjS0uYBEW2p5lzmd"
+              },
+              "genres" : [ ],
+              "href" : "https://api.spotify.com/v1/artists/2QqaC0TjS0uYBEW2p5lzmd",
+              "id" : "2QqaC0TjS0uYBEW2p5lzmd",
+              "images" : [ ],
+              "name" : "Teengirl Fantasy feat. Kelela",
+              "popularity" : 0,
+              "type" : "artist",
+              "uri" : "spotify:artist:2QqaC0TjS0uYBEW2p5lzmd"
+            }, {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/6ygAtFes1v2O0aenG3BpTs"
+              },
+              "genres" : [ ],
+              "href" : "https://api.spotify.com/v1/artists/6ygAtFes1v2O0aenG3BpTs",
+              "id" : "6ygAtFes1v2O0aenG3BpTs",
+              "images" : [ ],
+              "name" : "Teengirl Fantasy feat. Romanthony",
+              "popularity" : 0,
+              "type" : "artist",
+              "uri" : "spotify:artist:6ygAtFes1v2O0aenG3BpTs"
+            }, {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/1fvcSArK9F6UaxLHsRjGEz"
+              },
+              "genres" : [ ],
+              "href" : "https://api.spotify.com/v1/artists/1fvcSArK9F6UaxLHsRjGEz",
+              "id" : "1fvcSArK9F6UaxLHsRjGEz",
+              "images" : [ ],
+              "name" : "Teengirl Fantasy feat. Panda Bear",
+              "popularity" : 0,
+              "type" : "artist",
+              "uri" : "spotify:artist:1fvcSArK9F6UaxLHsRjGEz"
+            }, {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/5JIpiF3WisWFgBwkX07lbJ"
+              },
+              "genres" : [ ],
+              "href" : "https://api.spotify.com/v1/artists/5JIpiF3WisWFgBwkX07lbJ",
+              "id" : "5JIpiF3WisWFgBwkX07lbJ",
+              "images" : [ ],
+              "name" : "Teengirl Fantasy feat. Laurel Halo",
+              "popularity" : 0,
+              "type" : "artist",
+              "uri" : "spotify:artist:5JIpiF3WisWFgBwkX07lbJ"
+            } ],
+            "limit" : 20,
+            "next" : null,
+            "offset" : 0,
+            "previous" : null,
+            "total" : 5
+          }
+        }
+    http_version: 
+  recorded_at: Fri, 26 Dec 2014 16:55:15 GMT
+- request:
+    method: get
+    uri: https://api.spotify.com/v1/artists/6Y7sP6UmEue4Ym3m5HqK8X/albums
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 26 Dec 2014 16:55:15 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=600
+      Cache-Control:
+      - public, max-age=7200
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Origin, Content-Type
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '604800'
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE
+      Access-Control-Allow-Credentials:
+      - 'true'
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=31536000;
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "href" : "https://api.spotify.com/v1/artists/6Y7sP6UmEue4Ym3m5HqK8X/albums?offset=0&limit=20&album_type=single,album,compilation,appears_on",
+          "items" : [ {
+            "album_type" : "album",
+            "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "UY" ],
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/album/7EnOEDA15T2WqWnlyGnlku"
+            },
+            "href" : "https://api.spotify.com/v1/albums/7EnOEDA15T2WqWnlyGnlku",
+            "id" : "7EnOEDA15T2WqWnlyGnlku",
+            "images" : [ {
+              "height" : 640,
+              "url" : "https://i.scdn.co/image/d08387f75f6b5596f996ebbde1c463b1cf71f118",
+              "width" : 640
+            }, {
+              "height" : 300,
+              "url" : "https://i.scdn.co/image/2550b21b4414dc7f275c57256fc7259b1ee97a51",
+              "width" : 300
+            }, {
+              "height" : 64,
+              "url" : "https://i.scdn.co/image/3bfe1f4a572b0ee56dcb364fb753893e69621479",
+              "width" : 64
+            } ],
+            "name" : "Tracer",
+            "type" : "album",
+            "uri" : "spotify:album:7EnOEDA15T2WqWnlyGnlku"
+          }, {
+            "album_type" : "album",
+            "available_markets" : [ "CA", "US" ],
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/album/6XplXTzGTUHLAXYeEg909s"
+            },
+            "href" : "https://api.spotify.com/v1/albums/6XplXTzGTUHLAXYeEg909s",
+            "id" : "6XplXTzGTUHLAXYeEg909s",
+            "images" : [ {
+              "height" : 640,
+              "url" : "https://i.scdn.co/image/b46abaadbbcc1651d9245c3e2a284283da399dbb",
+              "width" : 640
+            }, {
+              "height" : 300,
+              "url" : "https://i.scdn.co/image/11db021a885de668106bd113360f392d617bcdca",
+              "width" : 300
+            }, {
+              "height" : 64,
+              "url" : "https://i.scdn.co/image/0b81343be5114465a4ea2c7f7dc581a486e7d1c5",
+              "width" : 64
+            } ],
+            "name" : "Tracer",
+            "type" : "album",
+            "uri" : "spotify:album:6XplXTzGTUHLAXYeEg909s"
+          }, {
+            "album_type" : "album",
+            "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "US", "UY" ],
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/album/467lmII7b3TL7pV6fFkfMs"
+            },
+            "href" : "https://api.spotify.com/v1/albums/467lmII7b3TL7pV6fFkfMs",
+            "id" : "467lmII7b3TL7pV6fFkfMs",
+            "images" : [ {
+              "height" : 640,
+              "url" : "https://i.scdn.co/image/f730311a48b88f0cecba88bd234b7276601993e1",
+              "width" : 640
+            }, {
+              "height" : 300,
+              "url" : "https://i.scdn.co/image/2b2e4ca82c5d06e7260daafe41e0d3e3d0b2dacc",
+              "width" : 300
+            }, {
+              "height" : 64,
+              "url" : "https://i.scdn.co/image/a03f49e338024a76902a47743a126110b3573998",
+              "width" : 64
+            } ],
+            "name" : "Cheaters Remixes",
+            "type" : "album",
+            "uri" : "spotify:album:467lmII7b3TL7pV6fFkfMs"
+          }, {
+            "album_type" : "album",
+            "available_markets" : [ "AU", "CA", "US" ],
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/album/7Hv1H2gslkkqC3meIsBolf"
+            },
+            "href" : "https://api.spotify.com/v1/albums/7Hv1H2gslkkqC3meIsBolf",
+            "id" : "7Hv1H2gslkkqC3meIsBolf",
+            "images" : [ {
+              "height" : 640,
+              "url" : "https://i.scdn.co/image/c80d3235fa8613807211e37405173ef4dab58ced",
+              "width" : 640
+            }, {
+              "height" : 300,
+              "url" : "https://i.scdn.co/image/015d16cdb30c04132b4723738a329a3081f5af46",
+              "width" : 300
+            }, {
+              "height" : 64,
+              "url" : "https://i.scdn.co/image/05844809b6b48c50a476c7323f1a2fe116b9bbb4",
+              "width" : 64
+            } ],
+            "name" : "7AM",
+            "type" : "album",
+            "uri" : "spotify:album:7Hv1H2gslkkqC3meIsBolf"
+          }, {
+            "album_type" : "album",
+            "available_markets" : [ "AD", "AT", "BE", "BG", "CH", "CY", "CZ", "DE", "DK", "EE", "ES", "FI", "FR", "GB", "GR", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "NL", "NO", "PL", "PT", "RO", "SE", "SI", "SK" ],
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/album/3hmFmqXG1wLiIyTzpw1jFF"
+            },
+            "href" : "https://api.spotify.com/v1/albums/3hmFmqXG1wLiIyTzpw1jFF",
+            "id" : "3hmFmqXG1wLiIyTzpw1jFF",
+            "images" : [ {
+              "height" : 640,
+              "url" : "https://i.scdn.co/image/c1a5354fa1848e8163a8bbedafcbacdbb5314ec5",
+              "width" : 640
+            }, {
+              "height" : 300,
+              "url" : "https://i.scdn.co/image/d013eb238a623a3e8493c885e3316dce1724777c",
+              "width" : 300
+            }, {
+              "height" : 64,
+              "url" : "https://i.scdn.co/image/a736b33ca3a70c697598146fe3f650611076382a",
+              "width" : 64
+            } ],
+            "name" : "7AM",
+            "type" : "album",
+            "uri" : "spotify:album:3hmFmqXG1wLiIyTzpw1jFF"
+          }, {
+            "album_type" : "single",
+            "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "US", "UY" ],
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/album/5TRmx1qa79tjqznVYNTzwP"
+            },
+            "href" : "https://api.spotify.com/v1/albums/5TRmx1qa79tjqznVYNTzwP",
+            "id" : "5TRmx1qa79tjqznVYNTzwP",
+            "images" : [ {
+              "height" : 640,
+              "url" : "https://i.scdn.co/image/1e00e9ee5a9913a1296a598d319866fba9b1269f",
+              "width" : 640
+            }, {
+              "height" : 300,
+              "url" : "https://i.scdn.co/image/11062c34f511cb7e8028fbb284f0c32fdf1c2a96",
+              "width" : 300
+            }, {
+              "height" : 64,
+              "url" : "https://i.scdn.co/image/1abeda428f905b3a0c3ba1c105dfe809989f4865",
+              "width" : 64
+            } ],
+            "name" : "Thermal EP",
+            "type" : "album",
+            "uri" : "spotify:album:5TRmx1qa79tjqznVYNTzwP"
+          }, {
+            "album_type" : "single",
+            "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "US", "UY" ],
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/album/1tNXsW7ePjh3tI1rJoPqvJ"
+            },
+            "href" : "https://api.spotify.com/v1/albums/1tNXsW7ePjh3tI1rJoPqvJ",
+            "id" : "1tNXsW7ePjh3tI1rJoPqvJ",
+            "images" : [ {
+              "height" : 640,
+              "url" : "https://i.scdn.co/image/caddfc26d29c97e74f52aecee4e9e495b78c4b62",
+              "width" : 640
+            }, {
+              "height" : 300,
+              "url" : "https://i.scdn.co/image/423e433a28f565edeb92694b67611e61851f5ca5",
+              "width" : 300
+            }, {
+              "height" : 64,
+              "url" : "https://i.scdn.co/image/a04493307da437117e8f70f1bbbded085afe710f",
+              "width" : 64
+            } ],
+            "name" : "Lung (feat. Lafawndah) - Single",
+            "type" : "album",
+            "uri" : "spotify:album:1tNXsW7ePjh3tI1rJoPqvJ"
+          }, {
+            "album_type" : "single",
+            "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "UY" ],
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/album/5LfIYh2s6qGWRadPdcamcJ"
+            },
+            "href" : "https://api.spotify.com/v1/albums/5LfIYh2s6qGWRadPdcamcJ",
+            "id" : "5LfIYh2s6qGWRadPdcamcJ",
+            "images" : [ {
+              "height" : 640,
+              "url" : "https://i.scdn.co/image/e245fbcd7e46dd6dff330696acd9529ed5d1e6f8",
+              "width" : 640
+            }, {
+              "height" : 300,
+              "url" : "https://i.scdn.co/image/af25e53de3c72e8aba26445ce4afc7f6ee69f110",
+              "width" : 300
+            }, {
+              "height" : 64,
+              "url" : "https://i.scdn.co/image/e71e71706cf499188d94a1290e3d235409678497",
+              "width" : 64
+            } ],
+            "name" : "Nun",
+            "type" : "album",
+            "uri" : "spotify:album:5LfIYh2s6qGWRadPdcamcJ"
+          }, {
+            "album_type" : "single",
+            "available_markets" : [ "CA", "MX", "US" ],
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/album/205CNxMeEW1Qs8TSDd9u3D"
+            },
+            "href" : "https://api.spotify.com/v1/albums/205CNxMeEW1Qs8TSDd9u3D",
+            "id" : "205CNxMeEW1Qs8TSDd9u3D",
+            "images" : [ {
+              "height" : 640,
+              "url" : "https://i.scdn.co/image/a78ff1dc051649041ab28ce8f67f5d49aa266931",
+              "width" : 640
+            }, {
+              "height" : 300,
+              "url" : "https://i.scdn.co/image/ed51984f1401cbc5b98b764587df805b111f6bb8",
+              "width" : 300
+            }, {
+              "height" : 64,
+              "url" : "https://i.scdn.co/image/88de91df19209ce569453f7073de6a019b0ee3e4",
+              "width" : 64
+            } ],
+            "name" : "Nun",
+            "type" : "album",
+            "uri" : "spotify:album:205CNxMeEW1Qs8TSDd9u3D"
+          }, {
+            "album_type" : "single",
+            "available_markets" : [ "CA", "US" ],
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/album/5FpwK4EncM9Q3ag3O5lQjH"
+            },
+            "href" : "https://api.spotify.com/v1/albums/5FpwK4EncM9Q3ag3O5lQjH",
+            "id" : "5FpwK4EncM9Q3ag3O5lQjH",
+            "images" : [ {
+              "height" : 640,
+              "url" : "https://i.scdn.co/image/9cc226101c3eab57320920d37725e13b85d85d95",
+              "width" : 640
+            }, {
+              "height" : 300,
+              "url" : "https://i.scdn.co/image/7bf1ad5c32112d839443fbbb95706d506dd94ec8",
+              "width" : 300
+            }, {
+              "height" : 64,
+              "url" : "https://i.scdn.co/image/83bdf2ae843821055c3ffdc200afa82b909f799b",
+              "width" : 64
+            } ],
+            "name" : "EFX",
+            "type" : "album",
+            "uri" : "spotify:album:5FpwK4EncM9Q3ag3O5lQjH"
+          }, {
+            "album_type" : "single",
+            "available_markets" : [ "CA", "US" ],
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/album/5Ri5mxtQLBfXoipux2E1Gi"
+            },
+            "href" : "https://api.spotify.com/v1/albums/5Ri5mxtQLBfXoipux2E1Gi",
+            "id" : "5Ri5mxtQLBfXoipux2E1Gi",
+            "images" : [ {
+              "height" : 640,
+              "url" : "https://i.scdn.co/image/cbfb63add95200fcdcfdef5e32e54c9f5fa02faa",
+              "width" : 640
+            }, {
+              "height" : 300,
+              "url" : "https://i.scdn.co/image/e7898ef9c8f0cde7dfe5202b43a72698ca700bdb",
+              "width" : 300
+            }, {
+              "height" : 64,
+              "url" : "https://i.scdn.co/image/dc70056217b4e6f94304d0384a78f035d6dedf0f",
+              "width" : 64
+            } ],
+            "name" : "EFX",
+            "type" : "album",
+            "uri" : "spotify:album:5Ri5mxtQLBfXoipux2E1Gi"
+          }, {
+            "album_type" : "single",
+            "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "UY" ],
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/album/0zD1ija2SXbWGw1kcKwoAy"
+            },
+            "href" : "https://api.spotify.com/v1/albums/0zD1ija2SXbWGw1kcKwoAy",
+            "id" : "0zD1ija2SXbWGw1kcKwoAy",
+            "images" : [ {
+              "height" : 640,
+              "url" : "https://i.scdn.co/image/f3a195a7c07e1e93ab7beb7a86f8dbd52c42e9bb",
+              "width" : 640
+            }, {
+              "height" : 300,
+              "url" : "https://i.scdn.co/image/66bde4b83f29b4c633a77b43cb22c2e34bd411a0",
+              "width" : 300
+            }, {
+              "height" : 64,
+              "url" : "https://i.scdn.co/image/deb518b13c150014d8673bfd45f5cf7f3cc6c150",
+              "width" : 64
+            } ],
+            "name" : "EFX",
+            "type" : "album",
+            "uri" : "spotify:album:0zD1ija2SXbWGw1kcKwoAy"
+          }, {
+            "album_type" : "single",
+            "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "US", "UY" ],
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/album/4djHfOVmrqZzWBHzOSa5x5"
+            },
+            "href" : "https://api.spotify.com/v1/albums/4djHfOVmrqZzWBHzOSa5x5",
+            "id" : "4djHfOVmrqZzWBHzOSa5x5",
+            "images" : [ {
+              "height" : 640,
+              "url" : "https://i.scdn.co/image/0346c5ae0eb0448e4562ffd3733372f72d7d7ab2",
+              "width" : 640
+            }, {
+              "height" : 300,
+              "url" : "https://i.scdn.co/image/5e305a66259d4fa7a74c49bded3f3b7486cea4e2",
+              "width" : 300
+            }, {
+              "height" : 64,
+              "url" : "https://i.scdn.co/image/563b914d4df845095160a61ad970b4c31f1fee3a",
+              "width" : 64
+            } ],
+            "name" : "Portofino",
+            "type" : "album",
+            "uri" : "spotify:album:4djHfOVmrqZzWBHzOSa5x5"
+          }, {
+            "album_type" : "compilation",
+            "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "UY" ],
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/album/156fSa33gwGdxPSmEe6FjV"
+            },
+            "href" : "https://api.spotify.com/v1/albums/156fSa33gwGdxPSmEe6FjV",
+            "id" : "156fSa33gwGdxPSmEe6FjV",
+            "images" : [ {
+              "height" : 640,
+              "url" : "https://i.scdn.co/image/a50ca48551837871d1942af885b94ed6f4916fab",
+              "width" : 640
+            }, {
+              "height" : 300,
+              "url" : "https://i.scdn.co/image/d822f671666c004c5161b2c9ee7410b70701a713",
+              "width" : 300
+            }, {
+              "height" : 64,
+              "url" : "https://i.scdn.co/image/00265acbd20ce2664363f7ab3315e1d6da13667d",
+              "width" : 64
+            } ],
+            "name" : "Tapes",
+            "type" : "album",
+            "uri" : "spotify:album:156fSa33gwGdxPSmEe6FjV"
+          } ],
+          "limit" : 20,
+          "next" : null,
+          "offset" : 0,
+          "previous" : null,
+          "total" : 14
+        }
+    http_version: 
+  recorded_at: Fri, 26 Dec 2014 16:55:15 GMT
+- request:
+    method: get
+    uri: https://api.spotify.com/v1/albums/7Hv1H2gslkkqC3meIsBolf/tracks?limit=50
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 26 Dec 2014 16:55:15 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=600
+      Cache-Control:
+      - public, max-age=7200
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Origin, Content-Type
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '604800'
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE
+      Access-Control-Allow-Credentials:
+      - 'true'
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=31536000;
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "href" : "https://api.spotify.com/v1/albums/7Hv1H2gslkkqC3meIsBolf/tracks?offset=0&limit=50",
+          "items" : [ {
+            "artists" : [ {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/6Y7sP6UmEue4Ym3m5HqK8X"
+              },
+              "href" : "https://api.spotify.com/v1/artists/6Y7sP6UmEue4Ym3m5HqK8X",
+              "id" : "6Y7sP6UmEue4Ym3m5HqK8X",
+              "name" : "Teengirl Fantasy",
+              "type" : "artist",
+              "uri" : "spotify:artist:6Y7sP6UmEue4Ym3m5HqK8X"
+            } ],
+            "available_markets" : [ "AU", "CA", "US" ],
+            "disc_number" : 1,
+            "duration_ms" : 318693,
+            "explicit" : false,
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/track/5c7PweZlIBNZWWpuuOVL4v"
+            },
+            "href" : "https://api.spotify.com/v1/tracks/5c7PweZlIBNZWWpuuOVL4v",
+            "id" : "5c7PweZlIBNZWWpuuOVL4v",
+            "name" : "Vibes",
+            "preview_url" : "https://p.scdn.co/mp3-preview/8dbd14fbae21d7e5b1337faada002113a0f62609",
+            "track_number" : 1,
+            "type" : "track",
+            "uri" : "spotify:track:5c7PweZlIBNZWWpuuOVL4v"
+          }, {
+            "artists" : [ {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/6Y7sP6UmEue4Ym3m5HqK8X"
+              },
+              "href" : "https://api.spotify.com/v1/artists/6Y7sP6UmEue4Ym3m5HqK8X",
+              "id" : "6Y7sP6UmEue4Ym3m5HqK8X",
+              "name" : "Teengirl Fantasy",
+              "type" : "artist",
+              "uri" : "spotify:artist:6Y7sP6UmEue4Ym3m5HqK8X"
+            } ],
+            "available_markets" : [ "AU", "CA", "US" ],
+            "disc_number" : 1,
+            "duration_ms" : 174440,
+            "explicit" : false,
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/track/3zfuTmX1PgfnuGdU4B55Ju"
+            },
+            "href" : "https://api.spotify.com/v1/tracks/3zfuTmX1PgfnuGdU4B55Ju",
+            "id" : "3zfuTmX1PgfnuGdU4B55Ju",
+            "name" : "In an Arena",
+            "preview_url" : "https://p.scdn.co/mp3-preview/52bb00e1dffa36448b9b65c8cdf500e9d850fb16",
+            "track_number" : 2,
+            "type" : "track",
+            "uri" : "spotify:track:3zfuTmX1PgfnuGdU4B55Ju"
+          }, {
+            "artists" : [ {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/6Y7sP6UmEue4Ym3m5HqK8X"
+              },
+              "href" : "https://api.spotify.com/v1/artists/6Y7sP6UmEue4Ym3m5HqK8X",
+              "id" : "6Y7sP6UmEue4Ym3m5HqK8X",
+              "name" : "Teengirl Fantasy",
+              "type" : "artist",
+              "uri" : "spotify:artist:6Y7sP6UmEue4Ym3m5HqK8X"
+            } ],
+            "available_markets" : [ "AU", "CA", "US" ],
+            "disc_number" : 1,
+            "duration_ms" : 241133,
+            "explicit" : false,
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/track/5NMuEhps7zu7BG7JWonJKy"
+            },
+            "href" : "https://api.spotify.com/v1/tracks/5NMuEhps7zu7BG7JWonJKy",
+            "id" : "5NMuEhps7zu7BG7JWonJKy",
+            "name" : "In the Rain",
+            "preview_url" : "https://p.scdn.co/mp3-preview/0c5998efe8f0a8bbff5a984919e596dc1de304cd",
+            "track_number" : 3,
+            "type" : "track",
+            "uri" : "spotify:track:5NMuEhps7zu7BG7JWonJKy"
+          }, {
+            "artists" : [ {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/6Y7sP6UmEue4Ym3m5HqK8X"
+              },
+              "href" : "https://api.spotify.com/v1/artists/6Y7sP6UmEue4Ym3m5HqK8X",
+              "id" : "6Y7sP6UmEue4Ym3m5HqK8X",
+              "name" : "Teengirl Fantasy",
+              "type" : "artist",
+              "uri" : "spotify:artist:6Y7sP6UmEue4Ym3m5HqK8X"
+            } ],
+            "available_markets" : [ "AU", "CA", "US" ],
+            "disc_number" : 1,
+            "duration_ms" : 127866,
+            "explicit" : false,
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/track/2wJRoHcWds4GDxsakOau93"
+            },
+            "href" : "https://api.spotify.com/v1/tracks/2wJRoHcWds4GDxsakOau93",
+            "id" : "2wJRoHcWds4GDxsakOau93",
+            "name" : "Make the Move",
+            "preview_url" : "https://p.scdn.co/mp3-preview/6e1970797b95ccf5672742a80291830ed789b752",
+            "track_number" : 4,
+            "type" : "track",
+            "uri" : "spotify:track:2wJRoHcWds4GDxsakOau93"
+          }, {
+            "artists" : [ {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/6Y7sP6UmEue4Ym3m5HqK8X"
+              },
+              "href" : "https://api.spotify.com/v1/artists/6Y7sP6UmEue4Ym3m5HqK8X",
+              "id" : "6Y7sP6UmEue4Ym3m5HqK8X",
+              "name" : "Teengirl Fantasy",
+              "type" : "artist",
+              "uri" : "spotify:artist:6Y7sP6UmEue4Ym3m5HqK8X"
+            } ],
+            "available_markets" : [ "AU", "CA", "US" ],
+            "disc_number" : 1,
+            "duration_ms" : 304093,
+            "explicit" : false,
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/track/3apM29XpfQWRg0MXBbN9Cc"
+            },
+            "href" : "https://api.spotify.com/v1/tracks/3apM29XpfQWRg0MXBbN9Cc",
+            "id" : "3apM29XpfQWRg0MXBbN9Cc",
+            "name" : "Floor to Floor",
+            "preview_url" : "https://p.scdn.co/mp3-preview/495d1dcd488d2480510e04e3fe39790e0588b008",
+            "track_number" : 5,
+            "type" : "track",
+            "uri" : "spotify:track:3apM29XpfQWRg0MXBbN9Cc"
+          }, {
+            "artists" : [ {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/6Y7sP6UmEue4Ym3m5HqK8X"
+              },
+              "href" : "https://api.spotify.com/v1/artists/6Y7sP6UmEue4Ym3m5HqK8X",
+              "id" : "6Y7sP6UmEue4Ym3m5HqK8X",
+              "name" : "Teengirl Fantasy",
+              "type" : "artist",
+              "uri" : "spotify:artist:6Y7sP6UmEue4Ym3m5HqK8X"
+            } ],
+            "available_markets" : [ "AU", "CA", "US" ],
+            "disc_number" : 1,
+            "duration_ms" : 390773,
+            "explicit" : false,
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/track/2JAVtU6Mhrf829qop8B5ZG"
+            },
+            "href" : "https://api.spotify.com/v1/tracks/2JAVtU6Mhrf829qop8B5ZG",
+            "id" : "2JAVtU6Mhrf829qop8B5ZG",
+            "name" : "Cheaters",
+            "preview_url" : "https://p.scdn.co/mp3-preview/75fc5942fa0cb50e77256b5fe0b5332fcfec2c73",
+            "track_number" : 6,
+            "type" : "track",
+            "uri" : "spotify:track:2JAVtU6Mhrf829qop8B5ZG"
+          }, {
+            "artists" : [ {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/6Y7sP6UmEue4Ym3m5HqK8X"
+              },
+              "href" : "https://api.spotify.com/v1/artists/6Y7sP6UmEue4Ym3m5HqK8X",
+              "id" : "6Y7sP6UmEue4Ym3m5HqK8X",
+              "name" : "Teengirl Fantasy",
+              "type" : "artist",
+              "uri" : "spotify:artist:6Y7sP6UmEue4Ym3m5HqK8X"
+            } ],
+            "available_markets" : [ "AU", "CA", "US" ],
+            "disc_number" : 1,
+            "duration_ms" : 220066,
+            "explicit" : false,
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/track/081REedNsEILPiS1QuMfuZ"
+            },
+            "href" : "https://api.spotify.com/v1/tracks/081REedNsEILPiS1QuMfuZ",
+            "id" : "081REedNsEILPiS1QuMfuZ",
+            "name" : "Dancing in Slow Motion (f/ Shannon Funchess)",
+            "preview_url" : "https://p.scdn.co/mp3-preview/07f66e6a8a844b8c88e0c75b215bdd8b5aa9670f",
+            "track_number" : 7,
+            "type" : "track",
+            "uri" : "spotify:track:081REedNsEILPiS1QuMfuZ"
+          }, {
+            "artists" : [ {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/6Y7sP6UmEue4Ym3m5HqK8X"
+              },
+              "href" : "https://api.spotify.com/v1/artists/6Y7sP6UmEue4Ym3m5HqK8X",
+              "id" : "6Y7sP6UmEue4Ym3m5HqK8X",
+              "name" : "Teengirl Fantasy",
+              "type" : "artist",
+              "uri" : "spotify:artist:6Y7sP6UmEue4Ym3m5HqK8X"
+            } ],
+            "available_markets" : [ "AU", "CA", "US" ],
+            "disc_number" : 1,
+            "duration_ms" : 257226,
+            "explicit" : false,
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/track/1T1UFIo71h7onsWQ1tp9bA"
+            },
+            "href" : "https://api.spotify.com/v1/tracks/1T1UFIo71h7onsWQ1tp9bA",
+            "id" : "1T1UFIo71h7onsWQ1tp9bA",
+            "name" : "Koi Pond",
+            "preview_url" : "https://p.scdn.co/mp3-preview/3bb2e228565bd4c60d34f864870758178077510c",
+            "track_number" : 8,
+            "type" : "track",
+            "uri" : "spotify:track:1T1UFIo71h7onsWQ1tp9bA"
+          }, {
+            "artists" : [ {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/6Y7sP6UmEue4Ym3m5HqK8X"
+              },
+              "href" : "https://api.spotify.com/v1/artists/6Y7sP6UmEue4Ym3m5HqK8X",
+              "id" : "6Y7sP6UmEue4Ym3m5HqK8X",
+              "name" : "Teengirl Fantasy",
+              "type" : "artist",
+              "uri" : "spotify:artist:6Y7sP6UmEue4Ym3m5HqK8X"
+            } ],
+            "available_markets" : [ "AU", "CA", "US" ],
+            "disc_number" : 1,
+            "duration_ms" : 329440,
+            "explicit" : false,
+            "external_urls" : {
+              "spotify" : "https://open.spotify.com/track/6FI0O6O0xDDC5PJFsnxcfp"
+            },
+            "href" : "https://api.spotify.com/v1/tracks/6FI0O6O0xDDC5PJFsnxcfp",
+            "id" : "6FI0O6O0xDDC5PJFsnxcfp",
+            "name" : "Forever the Feeling",
+            "preview_url" : "https://p.scdn.co/mp3-preview/955538111872f9c996efd02c8435090bd186a0a9",
+            "track_number" : 9,
+            "type" : "track",
+            "uri" : "spotify:track:6FI0O6O0xDDC5PJFsnxcfp"
+          } ],
+          "limit" : 50,
+          "next" : null,
+          "offset" : 0,
+          "previous" : null,
+          "total" : 9
+        }
+    http_version: 
+  recorded_at: Fri, 26 Dec 2014 16:55:15 GMT
+recorded_with: VCR 2.9.3
