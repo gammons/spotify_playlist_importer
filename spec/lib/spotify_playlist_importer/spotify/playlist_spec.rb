@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Spotify::Playlist do
+describe SpotifyPlaylistImporter::Spotify::Playlist do
   let(:song_ids) do 
     ["3c7xCi2LPquTiopDJAVYNu",
      nil,
@@ -25,21 +25,20 @@ describe Spotify::Playlist do
      "3wYH2PUpODMvSHs5enNbsZ",
      "1pezmGsfm6AOd3PLvyn4rJ"]
   end
-  let(:songs) { song_ids.map {|sid| s = Song.new;  s.spotify_id = sid; s } }
-  let(:playlist) { Playlist.new("test playlist", songs)}
+  let(:songs) { song_ids.map {|sid| s = SpotifyPlaylistImporter::Song.new;  s.spotify_id = sid; s } }
+  let(:playlist) { SpotifyPlaylistImporter::Playlist.new("test playlist", songs)}
 
   it "creates the playlist" do
     VCR.use_cassette(:create_playlist) do
-      p = Spotify::Playlist.new(playlist)
+      p = described_class.new(playlist)
       resp = p.create_playlist
       expect(resp).to_not be_nil
     end
   end
 
-
   it "adds songs to a playlist" do
     VCR.use_cassette(:add_songs) do
-      p = Spotify::Playlist.new(playlist)
+      p = described_class.new(playlist)
       playlist_id = p.create_playlist
       expect(p.add_songs_to_playlist).to have_key "snapshot_id"
     end

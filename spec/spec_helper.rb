@@ -3,7 +3,7 @@ require 'vcr'
 require 'dotenv'
 Dotenv.load
 
-require 'radio_parser'
+require 'spotify_playlist_importer'
 require 'pry'
 
 VCR.configure do |c|

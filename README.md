@@ -1,4 +1,4 @@
-# SpotifyPlaylistImporter
+# Spotify Playlist Importer
 
 This is a utility gem that will help facilitate importing spotify playlists from various sources.
 
