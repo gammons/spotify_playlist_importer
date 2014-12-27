@@ -11,6 +11,6 @@ describe SpotifyPlaylistImporter::WprbParser do
   end
 
   it 'gets the show name' do
-    subject.get_show_name.should eql("The James & Andy Show with James & Andy")
+    expect(subject.get_show_name).to eql("The James & Andy Show with James & Andy")
   end
 end
