@@ -28,6 +28,8 @@ describe SpotifyPlaylistImporter::Spotify::Playlist do
   let(:songs) { song_ids.map {|sid| s = SpotifyPlaylistImporter::Song.new;  s.spotify_id = sid; s } }
   let(:playlist) { SpotifyPlaylistImporter::Playlist.new("test playlist", songs)}
 
+  before { SpotifyPlaylistImporter::Spotify.user = "gammons" }
+
   it "creates the playlist" do
     VCR.use_cassette(:create_playlist) do
       p = described_class.new(playlist)

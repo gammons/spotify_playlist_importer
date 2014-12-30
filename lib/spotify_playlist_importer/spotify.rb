@@ -10,6 +10,14 @@ module SpotifyPlaylistImporter
       Thread.current[:spotify_access_token]
     end
 
+    def self.user=(user)
+      Thread.current[:spotify_user] = user
+    end
+
+    def self.user
+      Thread.current[:spotify_user]
+    end
+
     def self.get(url, params = nil)
       HTTParty.get(url, query: params, header: "Authorization: Bearer #{self.access_token}")
     end
